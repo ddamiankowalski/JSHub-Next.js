@@ -1,5 +1,13 @@
-export default function Home() {
+import ArticleTile from "./_components/artile-tile";
+
+export default function MainPage() {
   return (
-      <div>Hello there</div>
+    <div className="mt-20 flex flex-wrap gap-5">
+      <ArticleTile />
+      <ArticleTile />
+      <ArticleTile />
+      <ArticleTile />
+      <ArticleTile />
+    </div>
   );
 }
