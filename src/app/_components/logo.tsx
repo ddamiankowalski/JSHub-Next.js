@@ -8,7 +8,7 @@ export default function HubLogo() {
         <Image src={logo} alt="JavaScript hub logo" priority></Image>
       </div>
       <div>
-        <span className="font-semibold">hub</span>.dev
+        <span className="font-semibold select-none">hub</span><span className="select-none">.dev</span>
       </div>
     </div>
   );
