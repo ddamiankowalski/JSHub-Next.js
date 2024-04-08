@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function ArticleTile() {
   return (
     <Link href="/">
-      <div className="rounded-md relative min-h-32 select-none">
+      <div className="group rounded-md relative min-h-32 select-none shadow-lg hover:shadow-xl transition-all duration-300">
         <Image
           className="rounded-lg select-none"
           src={bg}
@@ -18,8 +18,8 @@ export default function ArticleTile() {
           draggable="false"
         >
         </Image>
-        <div className={`${styles.tile} rounded-md`}></div>
-        <div className="flex text-sm font-semibold absolute bottom-2 px-4 min-h-14 opacity-70 hover:opacity-100 transition-all">
+        <div className={`${styles.tile} rounded-md group-hover:opacity-90 transition-all`}></div>
+        <div className="tile-text flex text-sm font-medium absolute bottom-2 px-4 min-h-14 opacity-70 group-hover:opacity-90 transition-all duration-300">
           <span className={`relative ${styles['tile-text']}`}>How closures change the world or at least your code...</span>
           <div className="flex">
 

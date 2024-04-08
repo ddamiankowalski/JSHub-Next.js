@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        "auto-fit-100": "repeat(auto-fit, minmax(16rem, 1fr))",
+        "auto-fit-100": "repeat(auto-fit, minmax(18rem, 1fr))",
       },
     },
   },
