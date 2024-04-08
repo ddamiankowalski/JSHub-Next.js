@@ -3,12 +3,15 @@ import bg from "@/../public/img/article/1.png";
 
 export default function ArticleTile() {
   return (
-    <div className="grow rounded-md relative max-w-sm min-h-32 min-w-80">
+    <div className="rounded-md relative min-h-32 select-none">
       <Image
-        className="rounded-lg"
+        className="rounded-lg select-none"
         src={bg}
         alt="Article bg image"
         fill={true}
+        style={{ objectFit: "cover" }}
+        placeholder="blur"
+        draggable="false"
       >
       </Image>
       <span className="relative">hello world</span>
