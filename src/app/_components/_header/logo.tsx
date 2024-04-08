@@ -9,7 +9,7 @@ export default function HubLogo() {
         <div>
           <Image src={logo} alt="JavaScript hub logo" priority></Image>
         </div>
-        <div>
+        <div style={{ color: '#333333' }}>
           <span className="font-semibold select-none">hub</span><span className="select-none">.dev</span>
         </div>
       </div>

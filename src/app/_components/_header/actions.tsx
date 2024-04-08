@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function HubActions() {
   return (
-    <div className="flex flex items-center gap-x-2">
+    <div style={{ color: '#333333' }} className="flex flex items-center gap-x-2">
       <Image src={logo} alt="JavaScript hub logo" priority></Image>
       <Link href="https://github.com/ddamiankowalski">
         <span className="font-semibold text-xs transition-all opacity-50 hover:opacity-100">GitHub</span>

@@ -1,5 +1,10 @@
 .button {
+  transition: all .3s;
   background-color: rgba(240, 219, 79, 0.125);
+}
+
+.button:hover {
+  background-color: rgba(240, 219, 79, 0.25);
 }
 
 .text {

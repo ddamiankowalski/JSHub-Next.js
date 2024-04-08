@@ -19,7 +19,7 @@ export default function HubMenu() {
       {
         menuItems.map(({ id, name, link }) =>
           <Link href={link} key={id}>
-            <li className={clsx('transition-all hover:opacity-100', { 'opacity-50': pathName !== link })}>{name}</li>
+            <li style={{ color: '#333333' }} className={clsx('transition-all hover:opacity-100', { 'opacity-50': pathName !== link })}>{name}</li>
           </Link>
         )
       }
