@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./_components/header";
-import HubMenu from "./_components/menu";
-import HubActions from "./_components/actions";
-import HubLogo from "./_components/logo";
+import Header from "./_components/_header/header";
+import HubMenu from "./_components/_header/menu";
+import HubActions from "./_components/_header/actions";
+import HubLogo from "./_components/_header/logo";
 
 const inter = Inter({ subsets: ["latin"] });
 

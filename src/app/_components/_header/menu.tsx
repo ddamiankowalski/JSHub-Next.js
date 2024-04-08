@@ -1,6 +1,11 @@
+"use client"
+
+import clsx from "clsx";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function HubMenu() {
+  const pathName = usePathname();
 
   const menuItems = [
     { id: 0, name: 'Tutorials', link: '/tutorials' },
@@ -11,7 +16,13 @@ export default function HubMenu() {
 
   return (
     <menu className="flex items-center gap-x-10 font-semibold text-xs">
-      {menuItems.map(({ id, name, link }) => <Link href={link} key={id}><li className="transition-all opacity-50 hover:opacity-100">{name}</li></Link>)}
+      {
+        menuItems.map(({ id, name, link }) =>
+          <Link href={link} key={id}>
+            <li className={clsx('transition-all hover:opacity-100', { 'opacity-50': pathName !== link })}>{name}</li>
+          </Link>
+        )
+      }
     </menu>
   )
 }
