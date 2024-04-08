@@ -3,6 +3,7 @@ import bg from "@/../public/img/article/1.png";
 
 import styles from './article-tile.module.css';
 import Link from "next/link";
+import ArticleLikes from "./article-likes";
 
 export default function ArticleTile() {
   return (
@@ -19,10 +20,11 @@ export default function ArticleTile() {
         >
         </Image>
         <div className={`${styles.tile} rounded-md group-hover:opacity-90 transition-all`}></div>
-        <div className="tile-text flex text-sm font-medium absolute bottom-2 px-4 min-h-14 opacity-70 group-hover:opacity-90 transition-all duration-300">
-          <span className={`relative ${styles['tile-text']}`}>How closures change the world or at least your code...</span>
-          <div className="flex">
-
+        <div className="tile-text flex gap-2.5 text-sm font-medium absolute bottom-3 px-4 min-h-14 opacity-70 group-hover:opacity-90 transition-all duration-300">
+          <span className={`relative m-auto ${styles['tile-text']}`}>How closures change the world or at least your code...</span>
+          <div className="flex gap-1.5 items-center">
+            <ArticleLikes />
+            <ArticleLikes />
           </div>
         </div>
       </div>
