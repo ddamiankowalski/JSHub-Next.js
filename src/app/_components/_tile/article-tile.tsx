@@ -3,11 +3,11 @@ import bg from "@/../public/img/article/1.png";
 
 import styles from './article-tile.module.css';
 import Link from "next/link";
-import ArticleStats from "./article-stats";
+import ArticleStats from "./tile-stats";
 
-export default function ArticleTile() {
+export default function ArticleTile() {  
   return (
-    <Link href="/">
+    <Link href="/article">
       <div className="group rounded-md relative min-h-32 select-none shadow-lg hover:shadow-xl transition-all duration-300">
         <Image
           className="rounded-lg select-none"

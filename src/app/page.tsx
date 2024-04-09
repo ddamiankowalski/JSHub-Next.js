@@ -1,5 +1,5 @@
 import ArticleTile from "./_components/_tile/article-tile";
-import Transition from "./transition";
+import Transition from "../lib/transition";
 
 export default function MainPage() {
   return (

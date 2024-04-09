@@ -1,10 +1,10 @@
 "use client"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from './article-stats.module.css';
+import styles from './tile-stats.module.css';
 import { faComments, faHeart } from '@fortawesome/free-solid-svg-icons';
 
-export default function ArticleStats({ icon }: { icon: 'comments' | 'heart' }) {
+export default function TileStats({ icon }: { icon: 'comments' | 'heart' }) {
   const iconProp = icon === 'comments' ? faComments : faHeart; 
 
   return (
