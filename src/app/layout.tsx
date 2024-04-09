@@ -27,7 +27,7 @@ export default function RootLayout({
             <HubMenu />
             <HubActions />
           </Header>
-        {children}
+          <div className="mt-20">{children}</div>
         </div>
       </body>
     </html>

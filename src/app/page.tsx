@@ -3,14 +3,25 @@ import Transition from "./transition";
 
 export default function MainPage() {
   return (
-    <Transition>
-      <div className="mt-20 grid gap-5 grid-cols-auto-fit-100">
+    <div className="grid gap-5 grid-cols-auto-fit-100">
+      <Transition>
         <ArticleTile />
+      </Transition>
+      <Transition>
         <ArticleTile />
+      </Transition>
+      <Transition>
         <ArticleTile />
+      </Transition>
+      <Transition>
         <ArticleTile />
+      </Transition>
+      <Transition>
         <ArticleTile />
-      </div>
-    </Transition>
+      </Transition>
+      <Transition>
+        <ArticleTile />
+      </Transition>
+    </div>
   );
 }
