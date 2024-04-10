@@ -1,4 +1,5 @@
 import Transition from "../../lib/transition";
+import ArticleStats from "./_components/article-stats";
 import AuthorInfo from "./_components/author-info";
 
 export default function Article() {
@@ -9,6 +10,7 @@ export default function Article() {
             </Transition>
             <Transition delay={0.3}>
                 <AuthorInfo />
+                <ArticleStats />
             </Transition>
         </div>
     )
