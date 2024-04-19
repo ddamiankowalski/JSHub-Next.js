@@ -1,8 +1,16 @@
-"use client"
+'use client';
 
 import { motion } from 'framer-motion';
 
-export default function Transition({ children, delay = 0, className }: { children: React.ReactNode, className?: string, delay?: number }) {
+export default function Transition({
+  children,
+  delay = 0,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+}) {
   return (
     <motion.div
       className={`w-full ${className}`}
@@ -13,5 +21,5 @@ export default function Transition({ children, delay = 0, className }: { childre
     >
       {children}
     </motion.div>
-  )
+  );
 }
