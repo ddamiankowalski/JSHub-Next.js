@@ -8,6 +8,10 @@
   --main-text-color: '#474747';
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   color: var(--main-text-color);
   background: var(--background);
