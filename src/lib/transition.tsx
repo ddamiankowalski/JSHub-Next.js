@@ -7,6 +7,7 @@ export default function Transition({
   delay = 0,
   className,
 }: {
+  // eslint-disable-next-line no-undef
   children: React.ReactNode;
   className?: string;
   delay?: number;
