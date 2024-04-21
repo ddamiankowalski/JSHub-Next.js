@@ -25,7 +25,9 @@ router.get('/:id', async (req: Request, res: Response, next: NextFunction) => {
 
 router.post('/', async (req: Request, res: Response, next: NextFunction) => {
   try {
-    console.log(req.body);
+    const { title, subtitle } = req.body;
+    const article = await articleController.addArticle(title, subtitle);
+    res.json({ success: true, added: article });
   } catch (err) {
     return next(err);
   }

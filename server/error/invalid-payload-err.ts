@@ -1,8 +1,8 @@
 import { JSHubError } from './jshub-err';
 
-export class NotFoundError extends JSHubError {
-  systemMessage = 'NOT_FOUND_ERROR';
-  status = 404;
+export class InvalidPayloadError extends JSHubError {
+  systemMessage = 'INVALID_PAYLOAD';
+  status = 400;
 
   constructor(message: string = '') {
     super(message);
