@@ -1,15 +1,15 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
+import dotenv from 'dotenv';
+import express from 'express';
+import { json } from 'body-parser';
 
-const articleRouter = require('./routes/articles');
-const errorHandler = require('./middleware/error-handler');
+import { articlesRouter } from './routes/articles';
+import { errorHandler } from './middleware/error-handler';
 
 dotenv.config();
 
 const app = express();
-app.use(bodyParser.json());
-app.use('/articles', articleRouter);
+app.use(json());
+app.use('/articles', articlesRouter);
 
 const port = process.env.PORT;
 app.listen(port, () => {
