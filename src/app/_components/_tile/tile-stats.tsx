@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './tile-stats.module.css';
 import { faComments, faHeart } from '@fortawesome/free-solid-svg-icons';
 
-export default function TileStats({ icon }: { icon: 'comments' | 'heart' }) {
+export default function TileStats({ icon, value }: { icon: 'comments' | 'heart', value: number }) {
   const iconProp = icon === 'comments' ? faComments : faHeart;
 
   return (
@@ -22,7 +22,7 @@ export default function TileStats({ icon }: { icon: 'comments' | 'heart' }) {
       <span
         className={`${styles.text} font-normal opacity-50 transition-all duration-300 group-hover/stat:opacity-100`}
       >
-        12
+        {value}
       </span>
     </div>
   );

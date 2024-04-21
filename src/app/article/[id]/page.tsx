@@ -1,10 +1,11 @@
-import Transition from '../../lib/transition';
-import ArticlePicture from './_components/article-picture';
-import ArticleStats from './_components/article-stats';
-import AuthorInfo from './_components/author-info';
+import { getArticle } from '@/api/articles';
+import Transition from '../../../lib/transition';
+import ArticlePicture from '../_components/article-picture';
+import ArticleStats from '../_components/article-stats';
+import AuthorInfo from '../_components/author-info';
 
-export default async function Article() {
-  await new Promise(resolve => setTimeout(() => resolve(''), 3000));
+export default async function Article({ params }: { params: { id: string } }) {
+  const { article } = await getArticle(params.id);
 
   return (
     <div className='m-auto flex w-4/6 flex-col items-center'>
@@ -13,7 +14,7 @@ export default async function Article() {
           className='max-w-2xl py-6 text-center text-4xl font-extrabold leading-[3rem]'
           style={{ color: '#333333' }}
         >
-          How closures can change the world... or at least your code
+          {article.title}
         </h1>
       </Transition>
       <Transition delay={0.3}>
