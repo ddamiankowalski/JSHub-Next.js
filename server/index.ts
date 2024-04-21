@@ -9,7 +9,7 @@ dotenv.config();
 
 const app = express();
 app.use(json());
-app.use('/article', articlesRouter);
+app.use('/api/article', articlesRouter);
 
 const port = process.env.PORT;
 app.listen(port, () => {
